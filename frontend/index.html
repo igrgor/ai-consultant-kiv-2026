@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Consultant by KIV</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>AI Consultant</h1>
+      <p>AI-консультант для инженера: анализ текста, инструкций и рабочих описаний</p>
+    </header>
+
+    <main class="chat-wrapper">
+      <div id="chatBox" class="chat-box">
+        <div class="message assistant welcome">
+          <div class="bubble">
+            <div class="welcome-text">
+              Здравствуйте. Вставьте текст или сообщение для анализа.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-panel">
+        <textarea
+          id="userInput"
+          placeholder="Введите текст для анализа..."
+          rows="4"
+        ></textarea>
+
+        <div class="button-row">
+          <div class="button-left">
+            <button id="sendBtn">Отправить</button>
+            <button id="resetBtn" class="secondary">Стартовать заново</button>
+          </div>
+
+          <div class="button-right">
+            <button id="saveBtn" class="secondary">Сохранить</button>
+            <button id="printBtn" class="secondary">Печать</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <div>AI Consultant</div>
+      <div>by KIV • 2026</div>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
